@@ -4,11 +4,8 @@
   "description": "Slackbot that warns about open pull requests with given labels",
   "main": "index.js",
   "scripts": {
-    "pretest": "standard",
     "test": "tape test/*.js | faucet",
-    "start": "node index.js",
-    "commitmsg": "conventional-changelog-lint -e",
-    "version": "standard-changelog"
+    "start": "node index.js"
   },
   "keywords": [
     "slackbot",
@@ -29,13 +26,10 @@
     "slackbots": "^1.0.2"
   },
   "devDependencies": {
-    "conventional-changelog-lint": "^1.1.9",
     "faucet": "^0.0.1",
     "husky": "^0.13.3",
     "proxyquire": "^1.7.11",
     "sinon": "^2.1.0",
-    "standard": "^10.0.2",
-    "standard-changelog": "^1.0.1",
     "tape": "^4.6.3"
   }
 }
