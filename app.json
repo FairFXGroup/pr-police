@@ -2,7 +2,15 @@
   "name": "pr-police",
   "description": "A slack bot that reminds you of open PRs for review in your chosen repos",
   "repository": "https://github.com/Talkdesk/pr-police",
-  "keywords": ["pull", "request", "police", "github", "node", "slackbot", "slack"],
+  "keywords": [
+    "pull",
+    "request",
+    "police",
+    "github",
+    "node",
+    "slackbot",
+    "slack"
+  ],
   "logo": "https://raw.githubusercontent.com/Talkdesk/pr-police/master/images/badge-white-small.png",
   "formation": {
     "worker": {
@@ -17,7 +25,8 @@
     },
     "DEBUG": {
       "description": "Debug flag to enable more verbose logging",
-      "value": false
+      "value": "",
+      "required": false
     },
     "GH_TOKEN": {
       "description": "Github account token to access needed repositories",
@@ -63,7 +72,7 @@
     },
     "TIMES_TO_RUN": {
       "description": "What times of day to run (24-hour format), comma-separated",
-      "value": "0900",
+      "value": "0900"
     },
     "TZ": {
       "description": "The timezone the server should use. Heroku default is UTC. Uses tz database timezone format. Example: 'America/Los_Angeles'",
